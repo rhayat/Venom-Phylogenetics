@@ -1,0 +1,454 @@
+ Summarizing trees in files "aligned_sequences.nex.run1.t" and "aligned_sequences.nex.run2.t"
+   Using relative burnin ('relburnin=yes'), discarding the first 25 % of sampled trees
+   Writing statistics to files aligned_sequences.nex.<parts|tstat|vstat|trprobs|con>
+   Examining first file ...
+   Found one tree block in file "aligned_sequences.nex.run1.t" with 401 trees in last block
+   Expecting the same number of trees in the last tree block of all files
+
+   Tree reading status:
+
+   0      10      20      30      40      50      60      70      80      90     100
+   v-------v-------v-------v-------v-------v-------v-------v-------v-------v-------v
+   *********************************************************************************
+
+   Read a total of 802 trees in 2 files (sampling 602 of them)
+      (Each file contained 401 trees of which 301 were sampled)
+   Overwriting file "aligned_sequences.nex.parts"
+   Overwriting file "aligned_sequences.nex.tstat"
+   Overwriting file "aligned_sequences.nex.vstat"
+   Overwriting file "aligned_sequences.nex.con.tre"
+   Overwriting file "aligned_sequences.nex.trprobs"
+
+   General explanation:
+
+   In an unrooted tree, a taxon bipartition (split) is specified by removing a
+   branch, thereby dividing the species into those to the left and those to the
+   right of the branch. Here, taxa to one side of the removed branch are denoted
+   '.' and those to the other side are denoted '*'. Specifically, the '.' symbol
+   is used for the taxa on the same side as the outgroup.
+
+   In a rooted or clock tree, the tree is rooted using the model and not by
+   reference to an outgroup. Each bipartition therefore corresponds to a clade,
+   that is, a group that includes all the descendants of a particular branch in
+   the tree.  Taxa that are included in each clade are denoted using '*', and
+   taxa that are not included are denoted using the '.' symbol.
+
+   The output first includes a key to all the bipartitions with frequency larger
+   or equual to (Minpartfreq) in at least one run. Minpartfreq is a parameter to
+   sumt command and currently it is set to 0.10.  This is followed by a table
+   with statistics for the informative bipartitions (those including at least
+   two taxa), sorted from highest to lowest probability. For each bipartition,
+   the table gives the number of times the partition or split was observed in all
+   runs (#obs) and the posterior probability of the bipartition (Probab.), which
+   is the same as the split frequency. If several runs are summarized, this is
+   followed by the minimum split frequency (Min(s)), the maximum frequency
+   (Max(s)), and the standard deviation of frequencies (Stddev(s)) across runs.
+   The latter value should approach 0 for all bipartitions as MCMC runs converge.
+
+   This is followed by a table summarizing branch lengths, node heights (if a
+   clock model was used) and relaxed clock parameters (if a relaxed clock model
+   was used). The mean, variance, and 95 % credible interval are given for each
+   of these parameters. If several runs are summarized, the potential scale
+   reduction factor (PSRF) is also given; it should approach 1 as runs converge.
+   Node heights will take calibration points into account, if such points were
+   used in the analysis.
+
+   Note that Stddev may be unreliable if the partition is not present in all
+   runs (the last column indicates the number of runs that sampled the partition
+   if more than one run is summarized). The PSRF is not calculated at all if
+   the partition is not present in all runs.The PSRF is also sensitive to small
+   sample sizes and it should only be considered a rough guide to convergence
+   since some of the assumptions allowing one to interpret it as a true potential
+   scale reduction factor are violated in MrBayes.
+
+   List of taxa in bipartitions:
+
+      1 -- crotalus_horridus
+      2 -- trimeresurus_gracilis
+      3 -- calloselasma_rhodostoma
+      4 -- deinagkistrodon_acutus
+      5 -- ovophis_okinavensis
+      6 -- gloydius_halys
+      7 -- gloydius_ussuriensis
+      8 -- trimeresurus_gramineus
+      9 -- agkistrodon_piscivorus_piscivorus
+     10 -- vipera_ammodytes_ammodytes
+     11 -- daboia_russelii
+     12 -- bothrops_asper
+     13 -- bothrops_pauloensis
+     14 -- bothrops_jararaca
+     15 -- daboia_siamensis
+     16 -- echis_pyramidum_leakeyi
+     17 -- pogona_vitticeps
+     18 -- bothrocophias_hyoprora
+     19 -- eristicophis_macmahoni
+     20 -- agkistrodon_piscivorus_leucostoma
+     21 -- bothrops_atrox
+     22 -- bothrops_brazili
+     23 -- protobothrops_flavoviridis
+     24 -- crotalus_durissus_cumanensis
+     25 -- naja_naja
+     26 -- pseudonaja_textilis
+     27 -- notechis_scutatus
+     28 -- bothrops_marajoensis
+     29 -- laticauda_laticaudata
+     30 -- bitis_nasicornis
+     31 -- oryctolagus_cuniculus
+
+   Key to taxon bipartitions (saved to file "aligned_sequences.nex.parts"):
+
+   ID -- Partition
+   -------------------------------------
+    1 -- .******************************
+    2 -- .*.............................
+    3 -- ..*............................
+    4 -- ...*...........................
+    5 -- ....*..........................
+    6 -- .....*.........................
+    7 -- ......*........................
+    8 -- .......*.......................
+    9 -- ........*......................
+   10 -- .........*.....................
+   11 -- ..........*....................
+   12 -- ...........*...................
+   13 -- ............*..................
+   14 -- .............*.................
+   15 -- ..............*................
+   16 -- ...............*...............
+   17 -- ................*..............
+   18 -- .................*.............
+   19 -- ..................*............
+   20 -- ...................*...........
+   21 -- ....................*..........
+   22 -- .....................*.........
+   23 -- ......................*........
+   24 -- .......................*.......
+   25 -- ........................*......
+   26 -- .........................*.....
+   27 -- ..........................*....
+   28 -- ...........................*...
+   29 -- ............................*..
+   30 -- .............................*.
+   31 -- ..............................*
+   32 -- .**********************.*******
+   33 -- ..........*...*................
+   34 -- ........*..........*...........
+   35 -- .........................*..*..
+   36 -- ...........*.*...*.........*...
+   37 -- ...........***...*..**.....*...
+   38 -- ........................**..*..
+   39 -- ...*....*..........*..*.......*
+   40 -- ...*..*.*..........*..*.......*
+   41 -- ...*..................*.......*
+   42 -- ......................*.......*
+   43 -- ...........***...*..*......*...
+   44 -- ...........*.*...*...*.....*...
+   45 -- ...........*.*.............*...
+   46 -- ............*.......*..........
+   47 -- ...........*.*...*..**.....*...
+   48 -- .............*...*.........*...
+   49 -- .............*.............*...
+   50 -- ...........*.*.................
+   51 -- ...........*...............*...
+   52 -- ...........*.*...*..*......*...
+   53 -- ...........*.....*.........*...
+   54 -- ...*..................*........
+   55 -- ...*..*...............*.......*
+   56 -- .................*.........*...
+   57 -- ...........***...*...*.....*...
+   58 -- ...........*.....*.............
+   59 -- ............*........*.........
+   60 -- ...........*.*...*.............
+   61 -- ...........***...*.........*...
+   62 -- .............*...*.............
+   63 -- ...*..........................*
+   64 -- ....................**.........
+   65 -- ............*.......**.........
+   66 -- ........*..........*..*.......*
+   67 -- ........*..........*..........*
+   68 -- ......*.......................*
+   69 -- ........*..........*..*........
+   70 -- ..*.....................**..*..
+   71 -- .*.............*...............
+   -------------------------------------
+
+   Summary statistics for informative taxon bipartitions
+      (saved to file "aligned_sequences.nex.tstat"):
+
+   ID   #obs    Probab.     Sd(s)+      Min(s)      Max(s)   Nruns
+   ----------------------------------------------------------------
+   32   602    1.000000    0.000000    1.000000    1.000000    2
+   33   602    1.000000    0.000000    1.000000    1.000000    2
+   34   602    1.000000    0.000000    1.000000    1.000000    2
+   35   602    1.000000    0.000000    1.000000    1.000000    2
+   36   602    1.000000    0.000000    1.000000    1.000000    2
+   37   602    1.000000    0.000000    1.000000    1.000000    2
+   38   602    1.000000    0.000000    1.000000    1.000000    2
+   39   321    0.533223    0.007048    0.528239    0.538206    2
+   40   254    0.421927    0.000000    0.421927    0.421927    2
+   41   178    0.295681    0.014095    0.285714    0.305648    2
+   42   160    0.265781    0.014095    0.255814    0.275748    2
+   43   149    0.247508    0.049333    0.212625    0.282392    2
+   44   141    0.234219    0.039936    0.205980    0.262458    2
+   45   139    0.230897    0.086920    0.169435    0.292359    2
+   46   138    0.229236    0.004698    0.225914    0.232558    2
+   47   135    0.224252    0.049333    0.189369    0.259136    2
+   48   134    0.222591    0.042285    0.192691    0.252492    2
+   49   126    0.209302    0.032889    0.186047    0.232558    2
+   50   125    0.207641    0.058730    0.166113    0.249169    2
+   51   124    0.205980    0.018794    0.192691    0.219269    2
+   52   121    0.200997    0.030539    0.179402    0.222591    2
+   53   119    0.197674    0.011746    0.189369    0.205980    2
+   54   118    0.196013    0.004698    0.192691    0.199336    2
+   55   116    0.192691    0.093968    0.126246    0.259136    2
+   56   116    0.192691    0.018794    0.179402    0.205980    2
+   57   114    0.189369    0.014095    0.179402    0.199336    2
+   58   109    0.181063    0.030539    0.159468    0.202658    2
+   59   108    0.179402    0.028190    0.159468    0.199336    2
+   60   108    0.179402    0.032889    0.156146    0.202658    2
+   61   105    0.174419    0.007048    0.169435    0.179402    2
+   62   104    0.172757    0.032889    0.149502    0.196013    2
+   63   102    0.169435    0.032889    0.146179    0.192691    2
+   64    99    0.164452    0.030539    0.142857    0.186047    2
+   65    94    0.156146    0.004698    0.152824    0.159468    2
+   66    85    0.141196    0.025841    0.122924    0.159468    2
+   67    77    0.127907    0.002349    0.126246    0.129568    2
+   68    72    0.119601    0.028190    0.099668    0.139535    2
+   69    70    0.116279    0.051682    0.079734    0.152824    2
+   70    67    0.111296    0.054031    0.073090    0.149502    2
+   71    55    0.091362    0.016444    0.079734    0.102990    2
+   ----------------------------------------------------------------
+   + Convergence diagnostic (standard deviation of split frequencies)
+     should approach 0.0 as runs converge.
+
+
+   Summary statistics for branch and node parameters
+      (saved to file "aligned_sequences.nex.vstat"):
+
+                                           95% HPD Interval
+                                         --------------------
+   Parameter      Mean       Variance     Lower       Upper       Median     PSRF+  Nruns
+   --------------------------------------------------------------------------------------
+   length[1]     0.002269    0.000006    0.000006    0.007205    0.001392    1.000    2
+   length[2]     0.001799    0.000005    0.000001    0.005409    0.001113    0.999    2
+   length[3]     0.002342    0.000005    0.000022    0.006427    0.001786    1.015    2
+   length[4]     0.002259    0.000006    0.000010    0.007015    0.001475    1.019    2
+   length[5]     0.002402    0.000006    0.000000    0.006532    0.001863    1.006    2
+   length[6]     0.002550    0.000006    0.000010    0.008130    0.001733    1.005    2
+   length[7]     0.004222    0.000012    0.000092    0.011264    0.003419    1.010    2
+   length[8]     0.002601    0.000006    0.000009    0.007410    0.001804    1.025    2
+   length[9]     0.002065    0.000006    0.000013    0.006259    0.001315    1.029    2
+   length[10]    0.002152    0.000005    0.000003    0.006797    0.001349    1.006    2
+   length[11]    0.002432    0.000006    0.000037    0.007726    0.001556    1.006    2
+   length[12]    0.002373    0.000006    0.000007    0.007713    0.001611    1.013    2
+   length[13]    0.002306    0.000004    0.000006    0.006572    0.001672    1.013    2
+   length[14]    0.007118    0.000015    0.000551    0.014112    0.006416    1.042    2
+   length[15]    0.002312    0.000006    0.000011    0.007921    0.001413    1.002    2
+   length[16]    0.002149    0.000005    0.000017    0.006587    0.001453    1.017    2
+   length[17]    0.002036    0.000004    0.000003    0.006025    0.001431    1.000    2
+   length[18]    0.002348    0.000005    0.000003    0.006991    0.001749    0.999    2
+   length[19]    0.002426    0.000007    0.000000    0.006478    0.001777    1.003    2
+   length[20]    0.002054    0.000006    0.000002    0.006883    0.001258    1.001    2
+   length[21]    0.003006    0.000012    0.000031    0.009314    0.001919    1.000    2
+   length[22]    0.002347    0.000006    0.000007    0.007860    0.001591    0.999    2
+   length[23]    0.003148    0.000008    0.000004    0.008443    0.002210    0.999    2
+   length[24]    0.002148    0.000005    0.000025    0.006626    0.001459    1.000    2
+   length[25]    0.002456    0.000007    0.000016    0.007414    0.001556    0.998    2
+   length[26]    0.002252    0.000004    0.000009    0.006326    0.001592    1.011    2
+   length[27]    0.002544    0.000006    0.000001    0.007483    0.001840    0.999    2
+   length[28]    0.002693    0.000007    0.000000    0.007409    0.001731    1.019    2
+   length[29]    0.002304    0.000005    0.000011    0.006478    0.001742    1.002    2
+   length[30]    0.002338    0.000005    0.000039    0.006296    0.001700    1.007    2
+   length[31]    0.004882    0.000013    0.000334    0.012322    0.003966    0.999    2
+   length[32]    0.002460    0.000006    0.000001    0.007599    0.001655    1.000    2
+   length[33]    0.002692    0.000007    0.000006    0.007282    0.001973    0.999    2
+   length[34]    0.003625    0.000011    0.000005    0.010066    0.002724    0.999    2
+   length[35]    0.006781    0.000021    0.000137    0.015037    0.005703    0.998    2
+   length[36]    0.027709    0.000105    0.012453    0.047015    0.026196    1.015    2
+   length[37]    0.002759    0.000010    0.000006    0.008533    0.001762    1.015    2
+   length[38]    0.002219    0.000006    0.000003    0.006509    0.001540    1.000    2
+   length[39]    0.005132    0.000017    0.000043    0.013178    0.004191    0.997    2
+   length[40]    0.005526    0.000017    0.000044    0.013721    0.004803    1.001    2
+   length[41]    0.004818    0.000016    0.000027    0.013815    0.003530    1.020    2
+   length[42]    0.002968    0.000009    0.000012    0.009343    0.002184    0.997    2
+   length[43]    0.002563    0.000007    0.000032    0.007532    0.001914    1.029    2
+   length[44]    0.003115    0.000009    0.000002    0.008491    0.002142    0.995    2
+   length[45]    0.001797    0.000003    0.000025    0.005517    0.001400    0.996    2
+   length[46]    0.002543    0.000005    0.000000    0.007206    0.002031    0.994    2
+   length[47]    0.002534    0.000006    0.000002    0.007113    0.001771    1.007    2
+   length[48]    0.002047    0.000004    0.000008    0.006505    0.001392    1.006    2
+   length[49]    0.002312    0.000008    0.000026    0.006754    0.001323    0.993    2
+   length[50]    0.002221    0.000003    0.000007    0.005910    0.001844    1.003    2
+   length[51]    0.002099    0.000004    0.000005    0.007318    0.001396    1.006    2
+   length[52]    0.002794    0.000006    0.000011    0.007928    0.002175    0.997    2
+   length[53]    0.001934    0.000004    0.000006    0.006704    0.001217    0.992    2
+   length[54]    0.002380    0.000008    0.000004    0.007701    0.001298    1.009    2
+   length[55]    0.004859    0.000011    0.000055    0.010870    0.004034    1.096    2
+   length[56]    0.002388    0.000005    0.000020    0.007042    0.001441    0.994    2
+   length[57]    0.002423    0.000006    0.000009    0.007282    0.001698    1.039    2
+   length[58]    0.001883    0.000004    0.000004    0.005840    0.001270    0.993    2
+   length[59]    0.002188    0.000005    0.000036    0.006841    0.001655    0.991    2
+   length[60]    0.002133    0.000004    0.000005    0.006254    0.001568    0.996    2
+   length[61]    0.002327    0.000004    0.000009    0.006075    0.001870    1.014    2
+   length[62]    0.002194    0.000005    0.000029    0.006554    0.001423    1.005    2
+   length[63]    0.003158    0.000011    0.000012    0.010371    0.002216    1.060    2
+   length[64]    0.001992    0.000005    0.000025    0.006801    0.001202    0.997    2
+   length[65]    0.002434    0.000005    0.000039    0.006219    0.001885    1.007    2
+   length[66]    0.004175    0.000014    0.000184    0.012634    0.003408    0.991    2
+   length[67]    0.002979    0.000008    0.000007    0.007111    0.002142    1.002    2
+   length[68]    0.004116    0.000023    0.000026    0.012534    0.002961    0.991    2
+   length[69]    0.002890    0.000007    0.000037    0.007158    0.002251    0.999    2
+   length[70]    0.002941    0.000010    0.000120    0.009576    0.001689    1.123    2
+   length[71]    0.002486    0.000006    0.000201    0.007782    0.001459    0.996    2
+   --------------------------------------------------------------------------------------
+   + Convergence diagnostic (PSRF = Potential Scale Reduction Factor; Gelman
+     and Rubin, 1992) should approach 1.0 as runs converge. NA is reported when
+     deviation of parameter values within all runs is 0 or when a parameter
+     value (a branch length, for instance) is not sampled in all runs.
+
+
+   Summary statistics for partitions with frequency >= 0.10 in at least one run:
+       Average standard deviation of split frequencies = 0.024255
+       Maximum standard deviation of split frequencies = 0.093968
+       Average PSRF for parameter values (excluding NA and >10.0) = 1.009
+       Maximum PSRF for parameter values = 1.123
+
+
+   Clade credibility values:
+
+   /---------------------------------------------------------- crotalus_horrid~ (1)
+   |
+   |---------------------------------------------------------- crotalus_duris~ (24)
+   |
+   |              /------------------------------------------- trimeresurus_gr~ (2)
+   |              |
+   |              |------------------------------------------- calloselasma_rh~ (3)
+   |              |
+   |              |             /----------------------------- deinagkistrodon~ (4)
+   |              |             |
+   |              |             |              /-------------- agkistrodon_pis~ (9)
+   |              |             |------100-----+
+   |              |------53-----+              \-------------- agkistrodon_pi~ (20)
+   |              |             |
+   |              |             |----------------------------- protobothrops_~ (23)
+   |              |             |
+   +              |             \----------------------------- oryctolagus_cu~ (31)
+   |              |
+   |              |------------------------------------------- ovophis_okinave~ (5)
+   |              |
+   |              |------------------------------------------- gloydius_halys (6)
+   |              |
+   |              |------------------------------------------- gloydius_ussuri~ (7)
+   |              |
+   |              |------------------------------------------- trimeresurus_gr~ (8)
+   |              |
+   |              |------------------------------------------- vipera_ammodyt~ (10)
+   |              |
+   |              |                            /-------------- daboia_russelii (11)
+   |              |-------------100------------+
+   |              |                            \-------------- daboia_siamens~ (15)
+   |              |
+   \------100-----+                            /-------------- bothrops_asper (12)
+                  |                            |
+                  |                            |-------------- bothrops_jarar~ (14)
+                  |             /------100-----+
+                  |             |              |-------------- bothrocophias_~ (18)
+                  |             |              |
+                  |             |              \-------------- bothrops_maraj~ (28)
+                  |             |
+                  |-----100-----+----------------------------- bothrops_paulo~ (13)
+                  |             |
+                  |             |----------------------------- bothrops_atrox (21)
+                  |             |
+                  |             \----------------------------- bothrops_brazi~ (22)
+                  |
+                  |------------------------------------------- echis_pyramidu~ (16)
+                  |
+                  |------------------------------------------- pogona_vittice~ (17)
+                  |
+                  |------------------------------------------- eristicophis_m~ (19)
+                  |
+                  |             /----------------------------- naja_naja (25)
+                  |             |
+                  |-----100-----+              /-------------- pseudonaja_tex~ (26)
+                  |             \------100-----+
+                  |                            \-------------- laticauda_lati~ (29)
+                  |
+                  |------------------------------------------- notechis_scuta~ (27)
+                  |
+                  \------------------------------------------- bitis_nasicorn~ (30)
+
+
+   Phylogram (based on average branch lengths):
+
+   /-- crotalus_horrid~ (1)
+   |
+   |-- crotalus_duris~ (24)
+   |
+   |  /- trimeresurus_gr~ (2)
+   |  |
+   |  |--- calloselasma_rh~ (3)
+   |  |
+   |  |     /--- deinagkistrodon~ (4)
+   |  |     |
+   |  |     |    /-- agkistrodon_pis~ (9)
+   |  |     |----+
+   |  |-----+    \-- agkistrodon_pi~ (20)
+   |  |     |
+   |  |     |---- protobothrops_~ (23)
+   |  |     |
+   +  |     \------- oryctolagus_cu~ (31)
+   |  |
+   |  |--- ovophis_okinave~ (5)
+   |  |
+   |  |-- gloydius_halys (6)
+   |  |
+   |  |----- gloydius_ussuri~ (7)
+   |  |
+   |  |--- trimeresurus_gr~ (8)
+   |  |
+   |  |-- vipera_ammodyt~ (10)
+   |  |
+   |  |  /-- daboia_russelii (11)
+   |  |--+
+   |  |  \-- daboia_siamens~ (15)
+   |  |
+   \--+                                            /-- bothrops_asper (12)
+      |                                            |
+      |                                            |---------- bothrops_jarar~ (14)
+      |  /-----------------------------------------+
+      |  |                                         |-- bothrocophias_~ (18)
+      |  |                                         |
+      |  |                                         \-- bothrops_maraj~ (28)
+      |  |
+      |--+-- bothrops_paulo~ (13)
+      |  |
+      |  |--- bothrops_atrox (21)
+      |  |
+      |  \-- bothrops_brazi~ (22)
+      |
+      |-- echis_pyramidu~ (16)
+      |
+      |-- pogona_vittice~ (17)
+      |
+      |--- eristicophis_m~ (19)
+      |
+      | /--- naja_naja (25)
+      | |
+      |-+        /--- pseudonaja_tex~ (26)
+      | \--------+
+      |          \--- laticauda_lati~ (29)
+      |
+      |--- notechis_scuta~ (27)
+      |
+      \-- bitis_nasicorn~ (30)
+
+   |---------------| 0.010 expected changes per site
+
+   Calculating tree probabilities...
+
+   Credible sets of trees (602 trees sampled):
+      50 % credible set contains 301 trees
+      90 % credible set contains 542 trees
+      95 % credible set contains 572 trees
+      99 % credible set contains 596 trees
